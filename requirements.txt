@@ -1,0 +1,23 @@
+# torch/torchaudio pinned to a CUDA 12.8 build; swap to the cu121/cpu index
+# that matches your own GPU/driver if this exact build doesn't fit.
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch==2.7.1+cu128
+torchaudio==2.7.1+cu128
+
+numpy==1.26.4
+scipy==1.17.1
+soundfile==0.13.1
+PyYAML==6.0.3
+tqdm==4.67.3
+wandb==0.26.1
+
+# speakerlab.dataset.dataset's loudness-based noise augmentation.
+pyloudnorm==0.2.0
+
+# Eval metrics (PESQ/eSTOI).
+pystoi==0.4.1
+pesq @ https://github.com/ludlows/python-pesq/archive/master.zip
+
+# Only needed to regenerate the paper's figures (csm/speakerlab/bin/analysis, plotting).
+matplotlib==3.11.1
+scikit-learn==1.9.0

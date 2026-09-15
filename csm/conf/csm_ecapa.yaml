@@ -1,0 +1,76 @@
+# ECAPA-TDNN analog of csm.yaml (paper Fig. 1-2's encoder comparison): same
+# combined enroll+mixture training setup, but model.backbone: "ecapa" swaps
+# the frozen verification backbone from CAM++ to ECAPA-TDNN. Uses its own
+# ECAPA-specific centroid caches (precompute_centroids.py --backbone ecapa) --
+# NOT interchangeable with csm.yaml's CAM++ caches, despite the same
+# embedding_dim=192. campp_frame_dim is 3072 (ECAPA's mfa output channels).
+
+seed: 1234
+exp_dir: "exp/csm/csm_ecapa"
+
+# Pretrained, frozen ECAPA-TDNN backbone (modelscope iic/speech_ecapa-tdnn_sv_en_voxceleb_16k).
+campplus:
+  ckpt_path: "~/.cache/modelscope/models/iic--speech_ecapa-tdnn_sv_en_voxceleb_16k/snapshots/master/ecapa_tdnn.bin"
+
+model:
+  backbone: "ecapa"   # see speakerlab/bin/train.py's main() -- dispatches to ECAPACSM
+  impl: "v1"           # no_res / non-residual backbone (only supported impl for backbone: ecapa)
+  embedding_dim: 192
+  campp_frame_dim: 3072   # ECAPA-TDNN's mfa output channels (channels[-1]), NOT CAM++'s 512
+  transformer_dim: 512
+  num_layers: 1
+  num_heads: 8
+  ff_dim: 512
+  dropout: 0.1
+  use_conv: true
+  conv_kernel_size: 3
+  use_transformer: "attn_only"
+
+data:
+  librispeech_root: "../dataset/data/LibriSpeech"
+  sample_rate: 16000
+  batch_size: 128
+  val_batch_size: 32
+  num_workers: 8
+  train_subset: ["train-100"]
+  valid_subset: "dev"
+
+  # Enrollment (single-speaker) branch: crop/pad length (seconds).
+  enroll_len: 3.0
+
+  # Mixture branch: real Libri2Mix mixtures to LOAD.
+  mix_mode: "mix_clean"
+  train_mix_dirs:
+    - "../dataset/data/Libri2Mix/wav16k/min/train-100"
+    # - "../dataset/data/Libri2Mix/wav16k/min/train-360"
+  dev_mix_dirs:
+    - "../dataset/data/Libri2Mix/wav16k/min/dev"
+
+  # Crop/pad length (seconds) applied to the loaded mixture for batching.
+  mix_len: 3.0
+
+  # ECAPA-specific per-speaker centroids (precompute_centroids.py --backbone ecapa).
+  train_centroid_cache: "../dataset/data/centroid_cache/without_norm/train_speaker_centroids_100_360_ecapa.pt"
+  dev_centroid_cache: "../dataset/data/centroid_cache/without_norm/dev_speaker_centroids_ecapa.pt"
+
+training:
+  train_branches: ["enroll", "mixture"]
+  mix_loss_weight: 1.0
+  use_ap_loss: false
+  align_loss_type: "mse"
+  lr: 0.00004
+  lr_schedule: "exponential"
+  final_lr: 0.000008
+  weight_decay: 0.01
+  num_epoch: 50
+  log_batch_freq: 100
+  save_epoch_freq: 1
+  save_every_epoch: false
+  eval_epoch_freq: 1
+  # Physical GPU ids for DDP. Omit (or leave a single id) for single-GPU.
+  gpus: [0]
+
+wandb:
+  project: "csm"
+  name: "both_ecapa_100_conv_v6"
+  mode: "online"

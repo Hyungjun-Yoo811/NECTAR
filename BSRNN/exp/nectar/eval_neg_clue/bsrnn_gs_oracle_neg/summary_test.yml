@@ -1,0 +1,13 @@
+Acc: 0.983
+NSR: 0.0165
+PESQ: 2.941705786347389
+PESQ_mix: 1.1481929484009743
+SI-SDR: 16.718191883928142
+SI-SDR_mix: 0.0006371569156763143
+SI-SDRi: 16.717554729958376
+backbone_cfg: configs/neg_clue_v2_norm_dsm.yml
+backbone_clue_mode: v2
+case: bsrnn_gs_oracle_neg
+checkpoint: exp/neg_clue_v2_norm_dsm/best.ckpt
+eSTOI: 0.8939672095686884
+eSTOI_mix: 0.5374536101729244

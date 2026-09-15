@@ -1,0 +1,57 @@
+campplus:
+  ckpt_path: /home/yhj010811/.cache/modelscope/models/iic--speech_ecapa-tdnn_sv_en_voxceleb_16k/snapshots/master/ecapa_tdnn.bin
+data:
+  batch_size: 128
+  dev_centroid_cache: /NHNHOME/WORKSPACE/0526050040_A/hjyoo/test/dataset/data/centroid_cache/without_norm/dev_speaker_centroids_ecapa.pt
+  dev_mix_dirs:
+  - /NHNHOME/WORKSPACE/0526050040_A/hjyoo/test/dataset/data/Libri2Mix/wav16k/min/dev
+  enroll_len: 3.0
+  librispeech_root: /NHNHOME/WORKSPACE/0526050040_A/hjyoo/test/dataset/data/LibriSpeech
+  mix_len: 3.0
+  mix_mode: mix_clean
+  num_workers: 8
+  sample_rate: 16000
+  train_centroid_cache: /NHNHOME/WORKSPACE/0526050040_A/hjyoo/test/dataset/data/centroid_cache/without_norm/train_speaker_centroids_100_360_ecapa.pt
+  train_mix_dirs:
+  - /NHNHOME/WORKSPACE/0526050040_A/hjyoo/test/dataset/data/Libri2Mix/wav16k/min/train-100
+  train_subset:
+  - train-100
+  val_batch_size: 32
+  valid_subset: dev
+exp_dir: exp/csm/csm_ecapa
+model:
+  backbone: ecapa
+  campp_frame_dim: 3072
+  conv_kernel_size: 3
+  dropout: 0.1
+  embedding_dim: 192
+  ff_dim: 512
+  impl: v1
+  num_heads: 8
+  num_layers: 1
+  transformer_dim: 512
+  use_conv: true
+  use_transformer: attn_only
+seed: 1234
+training:
+  align_loss_type: mse
+  eval_epoch_freq: 1
+  final_lr: 8.0e-06
+  gpus:
+  - 0
+  log_batch_freq: 100
+  lr: 4.0e-05
+  lr_schedule: exponential
+  mix_loss_weight: 1.0
+  num_epoch: 50
+  save_epoch_freq: 1
+  save_every_epoch: false
+  train_branches:
+  - enroll
+  - mixture
+  use_ap_loss: false
+  weight_decay: 0.01
+wandb:
+  mode: online
+  name: both_ecapa_100_conv_v6
+  project: csm

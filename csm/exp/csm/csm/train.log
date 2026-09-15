@@ -1,0 +1,201 @@
+2026-09-08 16:25:18,118 - INFO: Mixture branch target: c1_plus_c2_sum
+2026-09-08 16:25:43,659 - INFO: Epoch [1] done.  avg MSE=3.9424e-03  avg MixAlignLoss=7.9799e-03
+2026-09-08 16:25:45,072 - INFO: [Epoch 1] val[enroll] loss=3.2279e-03  cos(predicted_centroid, true_centroid)=0.4262
+2026-09-08 16:25:47,826 - INFO: [Epoch 1] val[mixture] loss=6.6218e-03  cos(predicted_centroid, true_centroid)=0.4830
+2026-09-08 16:25:50,838 - INFO: [Epoch 1] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.2131 mse=3.6836e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.3729 mse=3.6988e-03
+2026-09-08 16:26:15,871 - INFO: Epoch [2] done.  avg MSE=3.1115e-03  avg MixAlignLoss=7.0084e-03
+2026-09-08 16:26:17,213 - INFO: [Epoch 2] val[enroll] loss=2.7299e-03  cos(predicted_centroid, true_centroid)=0.5503
+2026-09-08 16:26:20,073 - INFO: [Epoch 2] val[mixture] loss=6.0991e-03  cos(predicted_centroid, true_centroid)=0.5333
+2026-09-08 16:26:22,917 - INFO: [Epoch 2] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.3252 mse=3.5608e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4067 mse=5.2603e-03
+2026-09-08 16:26:48,042 - INFO: Epoch [3] done.  avg MSE=2.4487e-03  avg MixAlignLoss=6.2769e-03
+2026-09-08 16:26:49,353 - INFO: [Epoch 3] val[enroll] loss=2.4574e-03  cos(predicted_centroid, true_centroid)=0.6119
+2026-09-08 16:26:52,124 - INFO: [Epoch 3] val[mixture] loss=5.7908e-03  cos(predicted_centroid, true_centroid)=0.5647
+2026-09-08 16:26:55,053 - INFO: [Epoch 3] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.3392 mse=3.7501e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4277 mse=6.2366e-03
+2026-09-08 16:27:20,148 - INFO: Epoch [4] done.  avg MSE=2.0680e-03  avg MixAlignLoss=5.8266e-03
+2026-09-08 16:27:21,489 - INFO: [Epoch 4] val[enroll] loss=2.3315e-03  cos(predicted_centroid, true_centroid)=0.6412
+2026-09-08 16:27:24,255 - INFO: [Epoch 4] val[mixture] loss=5.6246e-03  cos(predicted_centroid, true_centroid)=0.5817
+2026-09-08 16:27:27,152 - INFO: [Epoch 4] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.3452 mse=3.9365e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4422 mse=6.8993e-03
+2026-09-08 16:27:52,318 - INFO: Epoch [5] done.  avg MSE=1.8402e-03  avg MixAlignLoss=5.5368e-03
+2026-09-08 16:27:53,688 - INFO: [Epoch 5] val[enroll] loss=2.2480e-03  cos(predicted_centroid, true_centroid)=0.6613
+2026-09-08 16:27:56,559 - INFO: [Epoch 5] val[mixture] loss=5.4995e-03  cos(predicted_centroid, true_centroid)=0.5942
+2026-09-08 16:27:59,433 - INFO: [Epoch 5] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.3606 mse=4.0201e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4511 mse=7.4827e-03
+2026-09-08 16:28:24,611 - INFO: Epoch [6] done.  avg MSE=1.6879e-03  avg MixAlignLoss=5.3352e-03
+2026-09-08 16:28:25,957 - INFO: [Epoch 6] val[enroll] loss=2.1808e-03  cos(predicted_centroid, true_centroid)=0.6755
+2026-09-08 16:28:28,700 - INFO: [Epoch 6] val[mixture] loss=5.4114e-03  cos(predicted_centroid, true_centroid)=0.6029
+2026-09-08 16:28:31,670 - INFO: [Epoch 6] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.3615 mse=4.1220e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4526 mse=7.8565e-03
+2026-09-08 16:28:56,812 - INFO: Epoch [7] done.  avg MSE=1.5826e-03  avg MixAlignLoss=5.1872e-03
+2026-09-08 16:28:58,139 - INFO: [Epoch 7] val[enroll] loss=2.1277e-03  cos(predicted_centroid, true_centroid)=0.6870
+2026-09-08 16:29:01,000 - INFO: [Epoch 7] val[mixture] loss=5.3673e-03  cos(predicted_centroid, true_centroid)=0.6080
+2026-09-08 16:29:03,834 - INFO: [Epoch 7] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.3672 mse=4.1644e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4605 mse=8.1133e-03
+2026-09-08 16:29:29,010 - INFO: Epoch [8] done.  avg MSE=1.4964e-03  avg MixAlignLoss=5.0750e-03
+2026-09-08 16:29:30,434 - INFO: [Epoch 8] val[enroll] loss=2.0953e-03  cos(predicted_centroid, true_centroid)=0.6936
+2026-09-08 16:29:33,197 - INFO: [Epoch 8] val[mixture] loss=5.3137e-03  cos(predicted_centroid, true_centroid)=0.6131
+2026-09-08 16:29:36,136 - INFO: [Epoch 8] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.3736 mse=4.2276e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4637 mse=8.4233e-03
+2026-09-08 16:30:01,167 - INFO: Epoch [9] done.  avg MSE=1.4274e-03  avg MixAlignLoss=4.9786e-03
+2026-09-08 16:30:02,500 - INFO: [Epoch 9] val[enroll] loss=2.0570e-03  cos(predicted_centroid, true_centroid)=0.7021
+2026-09-08 16:30:05,330 - INFO: [Epoch 9] val[mixture] loss=5.2841e-03  cos(predicted_centroid, true_centroid)=0.6164
+2026-09-08 16:30:08,282 - INFO: [Epoch 9] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.3733 mse=4.3066e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4690 mse=8.6004e-03
+2026-09-08 16:30:33,395 - INFO: Epoch [10] done.  avg MSE=1.3742e-03  avg MixAlignLoss=4.8998e-03
+2026-09-08 16:30:34,807 - INFO: [Epoch 10] val[enroll] loss=2.0357e-03  cos(predicted_centroid, true_centroid)=0.7067
+2026-09-08 16:30:37,549 - INFO: [Epoch 10] val[mixture] loss=5.2301e-03  cos(predicted_centroid, true_centroid)=0.6220
+2026-09-08 16:30:40,474 - INFO: [Epoch 10] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.3793 mse=4.2770e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4728 mse=8.7141e-03
+2026-09-08 16:31:05,405 - INFO: Epoch [11] done.  avg MSE=1.3246e-03  avg MixAlignLoss=4.8301e-03
+2026-09-08 16:31:06,785 - INFO: [Epoch 11] val[enroll] loss=2.0092e-03  cos(predicted_centroid, true_centroid)=0.7115
+2026-09-08 16:31:09,543 - INFO: [Epoch 11] val[mixture] loss=5.2032e-03  cos(predicted_centroid, true_centroid)=0.6243
+2026-09-08 16:31:12,411 - INFO: [Epoch 11] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.3831 mse=4.3679e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4745 mse=8.9459e-03
+2026-09-08 16:31:37,588 - INFO: Epoch [12] done.  avg MSE=1.2874e-03  avg MixAlignLoss=4.7753e-03
+2026-09-08 16:31:38,925 - INFO: [Epoch 12] val[enroll] loss=1.9950e-03  cos(predicted_centroid, true_centroid)=0.7150
+2026-09-08 16:31:41,791 - INFO: [Epoch 12] val[mixture] loss=5.1860e-03  cos(predicted_centroid, true_centroid)=0.6267
+2026-09-08 16:31:44,690 - INFO: [Epoch 12] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.3804 mse=4.3705e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4762 mse=8.9933e-03
+2026-09-08 16:32:09,745 - INFO: Epoch [13] done.  avg MSE=1.2573e-03  avg MixAlignLoss=4.7215e-03
+2026-09-08 16:32:11,095 - INFO: [Epoch 13] val[enroll] loss=1.9830e-03  cos(predicted_centroid, true_centroid)=0.7170
+2026-09-08 16:32:13,851 - INFO: [Epoch 13] val[mixture] loss=5.1712e-03  cos(predicted_centroid, true_centroid)=0.6278
+2026-09-08 16:32:16,777 - INFO: [Epoch 13] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.3871 mse=4.4011e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4785 mse=9.1864e-03
+2026-09-08 16:32:41,967 - INFO: Epoch [14] done.  avg MSE=1.2268e-03  avg MixAlignLoss=4.6784e-03
+2026-09-08 16:32:43,291 - INFO: [Epoch 14] val[enroll] loss=1.9709e-03  cos(predicted_centroid, true_centroid)=0.7190
+2026-09-08 16:32:46,170 - INFO: [Epoch 14] val[mixture] loss=5.1279e-03  cos(predicted_centroid, true_centroid)=0.6314
+2026-09-08 16:32:48,980 - INFO: [Epoch 14] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.3898 mse=4.3123e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4783 mse=9.0929e-03
+2026-09-08 16:33:14,059 - INFO: Epoch [15] done.  avg MSE=1.2016e-03  avg MixAlignLoss=4.6402e-03
+2026-09-08 16:33:15,446 - INFO: [Epoch 15] val[enroll] loss=1.9626e-03  cos(predicted_centroid, true_centroid)=0.7212
+2026-09-08 16:33:18,185 - INFO: [Epoch 15] val[mixture] loss=5.1413e-03  cos(predicted_centroid, true_centroid)=0.6312
+2026-09-08 16:33:21,108 - INFO: [Epoch 15] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.3840 mse=4.4084e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4775 mse=9.2787e-03
+2026-09-08 16:33:46,121 - INFO: Epoch [16] done.  avg MSE=1.1800e-03  avg MixAlignLoss=4.5986e-03
+2026-09-08 16:33:47,448 - INFO: [Epoch 16] val[enroll] loss=1.9336e-03  cos(predicted_centroid, true_centroid)=0.7256
+2026-09-08 16:33:50,305 - INFO: [Epoch 16] val[mixture] loss=5.1117e-03  cos(predicted_centroid, true_centroid)=0.6336
+2026-09-08 16:33:53,165 - INFO: [Epoch 16] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.3886 mse=4.4146e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4803 mse=9.3058e-03
+2026-09-08 16:34:18,274 - INFO: Epoch [17] done.  avg MSE=1.1619e-03  avg MixAlignLoss=4.5560e-03
+2026-09-08 16:34:19,656 - INFO: [Epoch 17] val[enroll] loss=1.9371e-03  cos(predicted_centroid, true_centroid)=0.7250
+2026-09-08 16:34:22,414 - INFO: [Epoch 17] val[mixture] loss=5.1225e-03  cos(predicted_centroid, true_centroid)=0.6330
+2026-09-08 16:34:25,361 - INFO: [Epoch 17] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.4000 mse=4.4318e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4848 mse=9.6191e-03
+2026-09-08 16:34:50,316 - INFO: Epoch [18] done.  avg MSE=1.1417e-03  avg MixAlignLoss=4.5303e-03
+2026-09-08 16:34:51,650 - INFO: [Epoch 18] val[enroll] loss=1.9185e-03  cos(predicted_centroid, true_centroid)=0.7289
+2026-09-08 16:34:54,417 - INFO: [Epoch 18] val[mixture] loss=5.0955e-03  cos(predicted_centroid, true_centroid)=0.6359
+2026-09-08 16:34:57,268 - INFO: [Epoch 18] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.3942 mse=4.3811e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4864 mse=9.4170e-03
+2026-09-08 16:35:22,421 - INFO: Epoch [19] done.  avg MSE=1.1224e-03  avg MixAlignLoss=4.5124e-03
+2026-09-08 16:35:23,759 - INFO: [Epoch 19] val[enroll] loss=1.9240e-03  cos(predicted_centroid, true_centroid)=0.7292
+2026-09-08 16:35:26,690 - INFO: [Epoch 19] val[mixture] loss=5.1054e-03  cos(predicted_centroid, true_centroid)=0.6354
+2026-09-08 16:35:29,550 - INFO: [Epoch 19] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.3952 mse=4.4414e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4855 mse=9.6529e-03
+2026-09-08 16:35:54,669 - INFO: Epoch [20] done.  avg MSE=1.1095e-03  avg MixAlignLoss=4.4785e-03
+2026-09-08 16:35:56,009 - INFO: [Epoch 20] val[enroll] loss=1.9171e-03  cos(predicted_centroid, true_centroid)=0.7297
+2026-09-08 16:35:58,760 - INFO: [Epoch 20] val[mixture] loss=5.0983e-03  cos(predicted_centroid, true_centroid)=0.6360
+2026-09-08 16:36:01,706 - INFO: [Epoch 20] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.3987 mse=4.4189e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4855 mse=9.7038e-03
+2026-09-08 16:36:26,833 - INFO: Epoch [21] done.  avg MSE=1.0951e-03  avg MixAlignLoss=4.4568e-03
+2026-09-08 16:36:28,180 - INFO: [Epoch 21] val[enroll] loss=1.9191e-03  cos(predicted_centroid, true_centroid)=0.7290
+2026-09-08 16:36:31,042 - INFO: [Epoch 21] val[mixture] loss=5.0769e-03  cos(predicted_centroid, true_centroid)=0.6378
+2026-09-08 16:36:33,882 - INFO: [Epoch 21] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.3968 mse=4.4503e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4858 mse=9.7094e-03
+2026-09-08 16:36:59,070 - INFO: Epoch [22] done.  avg MSE=1.0832e-03  avg MixAlignLoss=4.4341e-03
+2026-09-08 16:37:00,490 - INFO: [Epoch 22] val[enroll] loss=1.8933e-03  cos(predicted_centroid, true_centroid)=0.7338
+2026-09-08 16:37:03,233 - INFO: [Epoch 22] val[mixture] loss=5.0926e-03  cos(predicted_centroid, true_centroid)=0.6370
+2026-09-08 16:37:06,157 - INFO: [Epoch 22] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.3983 mse=4.4480e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4881 mse=9.7251e-03
+2026-09-08 16:37:31,324 - INFO: Epoch [23] done.  avg MSE=1.0714e-03  avg MixAlignLoss=4.4197e-03
+2026-09-08 16:37:32,651 - INFO: [Epoch 23] val[enroll] loss=1.9089e-03  cos(predicted_centroid, true_centroid)=0.7310
+2026-09-08 16:37:35,480 - INFO: [Epoch 23] val[mixture] loss=5.0829e-03  cos(predicted_centroid, true_centroid)=0.6376
+2026-09-08 16:37:38,338 - INFO: [Epoch 23] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.3951 mse=4.4406e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4849 mse=9.7175e-03
+2026-09-08 16:38:03,522 - INFO: Epoch [24] done.  avg MSE=1.0650e-03  avg MixAlignLoss=4.3946e-03
+2026-09-08 16:38:04,939 - INFO: [Epoch 24] val[enroll] loss=1.9033e-03  cos(predicted_centroid, true_centroid)=0.7319
+2026-09-08 16:38:07,708 - INFO: [Epoch 24] val[mixture] loss=5.0656e-03  cos(predicted_centroid, true_centroid)=0.6393
+2026-09-08 16:38:10,668 - INFO: [Epoch 24] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.4023 mse=4.4505e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4870 mse=9.9272e-03
+2026-09-08 16:38:35,712 - INFO: Epoch [25] done.  avg MSE=1.0515e-03  avg MixAlignLoss=4.3877e-03
+2026-09-08 16:38:37,052 - INFO: [Epoch 25] val[enroll] loss=1.8856e-03  cos(predicted_centroid, true_centroid)=0.7336
+2026-09-08 16:38:39,825 - INFO: [Epoch 25] val[mixture] loss=5.0504e-03  cos(predicted_centroid, true_centroid)=0.6409
+2026-09-08 16:38:42,636 - INFO: [Epoch 25] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.4005 mse=4.4377e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4872 mse=9.8480e-03
+2026-09-08 16:39:07,849 - INFO: Epoch [26] done.  avg MSE=1.0448e-03  avg MixAlignLoss=4.3687e-03
+2026-09-08 16:39:09,198 - INFO: [Epoch 26] val[enroll] loss=1.8866e-03  cos(predicted_centroid, true_centroid)=0.7332
+2026-09-08 16:39:11,990 - INFO: [Epoch 26] val[mixture] loss=5.0657e-03  cos(predicted_centroid, true_centroid)=0.6392
+2026-09-08 16:39:14,932 - INFO: [Epoch 26] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.4027 mse=4.4633e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4874 mse=9.9004e-03
+2026-09-08 16:39:39,941 - INFO: Epoch [27] done.  avg MSE=1.0391e-03  avg MixAlignLoss=4.3461e-03
+2026-09-08 16:39:41,292 - INFO: [Epoch 27] val[enroll] loss=1.8803e-03  cos(predicted_centroid, true_centroid)=0.7340
+2026-09-08 16:39:44,077 - INFO: [Epoch 27] val[mixture] loss=5.0484e-03  cos(predicted_centroid, true_centroid)=0.6409
+2026-09-08 16:39:47,002 - INFO: [Epoch 27] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.4094 mse=4.4043e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4902 mse=9.9544e-03
+2026-09-08 16:40:12,225 - INFO: Epoch [28] done.  avg MSE=1.0270e-03  avg MixAlignLoss=4.3366e-03
+2026-09-08 16:40:13,572 - INFO: [Epoch 28] val[enroll] loss=1.8740e-03  cos(predicted_centroid, true_centroid)=0.7348
+2026-09-08 16:40:16,396 - INFO: [Epoch 28] val[mixture] loss=5.0504e-03  cos(predicted_centroid, true_centroid)=0.6407
+2026-09-08 16:40:19,258 - INFO: [Epoch 28] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.4059 mse=4.4016e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4905 mse=9.8350e-03
+2026-09-08 16:40:44,322 - INFO: Epoch [29] done.  avg MSE=1.0156e-03  avg MixAlignLoss=4.3185e-03
+2026-09-08 16:40:45,683 - INFO: [Epoch 29] val[enroll] loss=1.8854e-03  cos(predicted_centroid, true_centroid)=0.7342
+2026-09-08 16:40:48,446 - INFO: [Epoch 29] val[mixture] loss=5.0649e-03  cos(predicted_centroid, true_centroid)=0.6404
+2026-09-08 16:40:51,519 - INFO: [Epoch 29] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.4064 mse=4.4195e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4906 mse=1.0005e-02
+2026-09-08 16:41:16,772 - INFO: Epoch [30] done.  avg MSE=1.0153e-03  avg MixAlignLoss=4.3031e-03
+2026-09-08 16:41:18,139 - INFO: [Epoch 30] val[enroll] loss=1.8809e-03  cos(predicted_centroid, true_centroid)=0.7348
+2026-09-08 16:41:20,994 - INFO: [Epoch 30] val[mixture] loss=5.0512e-03  cos(predicted_centroid, true_centroid)=0.6413
+2026-09-08 16:41:23,868 - INFO: [Epoch 30] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.4096 mse=4.4034e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4903 mse=1.0062e-02
+2026-09-08 16:41:49,080 - INFO: Epoch [31] done.  avg MSE=1.0060e-03  avg MixAlignLoss=4.2941e-03
+2026-09-08 16:41:50,479 - INFO: [Epoch 31] val[enroll] loss=1.8751e-03  cos(predicted_centroid, true_centroid)=0.7361
+2026-09-08 16:41:53,283 - INFO: [Epoch 31] val[mixture] loss=5.0467e-03  cos(predicted_centroid, true_centroid)=0.6423
+2026-09-08 16:41:56,272 - INFO: [Epoch 31] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.4091 mse=4.4270e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4924 mse=1.0108e-02
+2026-09-08 16:42:21,449 - INFO: Epoch [32] done.  avg MSE=9.9729e-04  avg MixAlignLoss=4.2791e-03
+2026-09-08 16:42:22,799 - INFO: [Epoch 32] val[enroll] loss=1.8652e-03  cos(predicted_centroid, true_centroid)=0.7363
+2026-09-08 16:42:25,648 - INFO: [Epoch 32] val[mixture] loss=5.0517e-03  cos(predicted_centroid, true_centroid)=0.6413
+2026-09-08 16:42:28,518 - INFO: [Epoch 32] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.4062 mse=4.4318e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4901 mse=1.0044e-02
+2026-09-08 16:42:53,773 - INFO: Epoch [33] done.  avg MSE=9.9394e-04  avg MixAlignLoss=4.2721e-03
+2026-09-08 16:42:55,204 - INFO: [Epoch 33] val[enroll] loss=1.8662e-03  cos(predicted_centroid, true_centroid)=0.7364
+2026-09-08 16:42:58,021 - INFO: [Epoch 33] val[mixture] loss=5.0407e-03  cos(predicted_centroid, true_centroid)=0.6428
+2026-09-08 16:43:00,974 - INFO: [Epoch 33] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.4103 mse=4.3941e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4914 mse=1.0118e-02
+2026-09-08 16:43:26,579 - INFO: Epoch [34] done.  avg MSE=9.8746e-04  avg MixAlignLoss=4.2571e-03
+2026-09-08 16:43:27,921 - INFO: [Epoch 34] val[enroll] loss=1.8743e-03  cos(predicted_centroid, true_centroid)=0.7340
+2026-09-08 16:43:30,809 - INFO: [Epoch 34] val[mixture] loss=5.0485e-03  cos(predicted_centroid, true_centroid)=0.6417
+2026-09-08 16:43:33,661 - INFO: [Epoch 34] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.4096 mse=4.3991e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4887 mse=1.0111e-02
+2026-09-08 16:43:58,955 - INFO: Epoch [35] done.  avg MSE=9.8214e-04  avg MixAlignLoss=4.2511e-03
+2026-09-08 16:44:00,377 - INFO: [Epoch 35] val[enroll] loss=1.8627e-03  cos(predicted_centroid, true_centroid)=0.7373
+2026-09-08 16:44:03,243 - INFO: [Epoch 35] val[mixture] loss=5.0502e-03  cos(predicted_centroid, true_centroid)=0.6421
+2026-09-08 16:44:07,432 - INFO: [Epoch 35] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.4143 mse=4.4206e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4945 mse=1.0211e-02
+2026-09-08 16:44:33,169 - INFO: Epoch [36] done.  avg MSE=9.7748e-04  avg MixAlignLoss=4.2282e-03
+2026-09-08 16:44:34,557 - INFO: [Epoch 36] val[enroll] loss=1.8591e-03  cos(predicted_centroid, true_centroid)=0.7371
+2026-09-08 16:44:37,329 - INFO: [Epoch 36] val[mixture] loss=5.0400e-03  cos(predicted_centroid, true_centroid)=0.6426
+2026-09-08 16:44:40,292 - INFO: [Epoch 36] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.4088 mse=4.4626e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4912 mse=1.0208e-02
+2026-09-08 16:45:05,515 - INFO: Epoch [37] done.  avg MSE=9.6809e-04  avg MixAlignLoss=4.2295e-03
+2026-09-08 16:45:06,861 - INFO: [Epoch 37] val[enroll] loss=1.8675e-03  cos(predicted_centroid, true_centroid)=0.7351
+2026-09-08 16:45:09,629 - INFO: [Epoch 37] val[mixture] loss=5.0496e-03  cos(predicted_centroid, true_centroid)=0.6417
+2026-09-08 16:45:13,204 - INFO: [Epoch 37] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.4092 mse=4.4725e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4902 mse=1.0255e-02
+2026-09-08 16:45:38,642 - INFO: Epoch [38] done.  avg MSE=9.6518e-04  avg MixAlignLoss=4.2213e-03
+2026-09-08 16:45:40,079 - INFO: [Epoch 38] val[enroll] loss=1.8582e-03  cos(predicted_centroid, true_centroid)=0.7377
+2026-09-08 16:45:42,846 - INFO: [Epoch 38] val[mixture] loss=5.0497e-03  cos(predicted_centroid, true_centroid)=0.6423
+2026-09-08 16:45:45,865 - INFO: [Epoch 38] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.4129 mse=4.4102e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4922 mse=1.0267e-02
+2026-09-08 16:46:11,081 - INFO: Epoch [39] done.  avg MSE=9.6597e-04  avg MixAlignLoss=4.2043e-03
+2026-09-08 16:46:12,417 - INFO: [Epoch 39] val[enroll] loss=1.8491e-03  cos(predicted_centroid, true_centroid)=0.7386
+2026-09-08 16:46:15,298 - INFO: [Epoch 39] val[mixture] loss=5.0495e-03  cos(predicted_centroid, true_centroid)=0.6425
+2026-09-08 16:46:18,131 - INFO: [Epoch 39] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.4111 mse=4.4201e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4918 mse=1.0250e-02
+2026-09-08 16:46:43,489 - INFO: Epoch [40] done.  avg MSE=9.6046e-04  avg MixAlignLoss=4.2013e-03
+2026-09-08 16:46:44,914 - INFO: [Epoch 40] val[enroll] loss=1.8561e-03  cos(predicted_centroid, true_centroid)=0.7378
+2026-09-08 16:46:47,737 - INFO: [Epoch 40] val[mixture] loss=5.0492e-03  cos(predicted_centroid, true_centroid)=0.6429
+2026-09-08 16:46:50,707 - INFO: [Epoch 40] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.4156 mse=4.4225e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4938 mse=1.0353e-02
+2026-09-08 16:47:15,855 - INFO: Epoch [41] done.  avg MSE=9.5459e-04  avg MixAlignLoss=4.1967e-03
+2026-09-08 16:47:17,186 - INFO: [Epoch 41] val[enroll] loss=1.8659e-03  cos(predicted_centroid, true_centroid)=0.7362
+2026-09-08 16:47:20,010 - INFO: [Epoch 41] val[mixture] loss=5.0514e-03  cos(predicted_centroid, true_centroid)=0.6427
+2026-09-08 16:47:22,858 - INFO: [Epoch 41] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.4138 mse=4.4295e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4934 mse=1.0330e-02
+2026-09-08 16:47:48,053 - INFO: Epoch [42] done.  avg MSE=9.4715e-04  avg MixAlignLoss=4.1862e-03
+2026-09-08 16:47:49,437 - INFO: [Epoch 42] val[enroll] loss=1.8693e-03  cos(predicted_centroid, true_centroid)=0.7347
+2026-09-08 16:47:52,283 - INFO: [Epoch 42] val[mixture] loss=5.0438e-03  cos(predicted_centroid, true_centroid)=0.6428
+2026-09-08 16:47:55,233 - INFO: [Epoch 42] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.4190 mse=4.3702e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4940 mse=1.0335e-02
+2026-09-08 16:48:20,493 - INFO: Epoch [43] done.  avg MSE=9.4891e-04  avg MixAlignLoss=4.1863e-03
+2026-09-08 16:48:21,851 - INFO: [Epoch 43] val[enroll] loss=1.8569e-03  cos(predicted_centroid, true_centroid)=0.7371
+2026-09-08 16:48:24,636 - INFO: [Epoch 43] val[mixture] loss=5.0508e-03  cos(predicted_centroid, true_centroid)=0.6427
+2026-09-08 16:48:27,550 - INFO: [Epoch 43] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.4153 mse=4.4018e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4951 mse=1.0266e-02
+2026-09-08 16:48:52,791 - INFO: Epoch [44] done.  avg MSE=9.4142e-04  avg MixAlignLoss=4.1666e-03
+2026-09-08 16:48:54,115 - INFO: [Epoch 44] val[enroll] loss=1.8594e-03  cos(predicted_centroid, true_centroid)=0.7367
+2026-09-08 16:48:56,926 - INFO: [Epoch 44] val[mixture] loss=5.0519e-03  cos(predicted_centroid, true_centroid)=0.6427
+2026-09-08 16:48:59,845 - INFO: [Epoch 44] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.4150 mse=4.4216e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4915 mse=1.0422e-02
+2026-09-08 16:49:25,004 - INFO: Epoch [45] done.  avg MSE=9.4062e-04  avg MixAlignLoss=4.1700e-03
+2026-09-08 16:49:26,355 - INFO: [Epoch 45] val[enroll] loss=1.8553e-03  cos(predicted_centroid, true_centroid)=0.7373
+2026-09-08 16:49:29,136 - INFO: [Epoch 45] val[mixture] loss=5.0599e-03  cos(predicted_centroid, true_centroid)=0.6424
+2026-09-08 16:49:32,051 - INFO: [Epoch 45] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.4148 mse=4.3926e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4950 mse=1.0286e-02
+2026-09-08 16:49:57,275 - INFO: Epoch [46] done.  avg MSE=9.3639e-04  avg MixAlignLoss=4.1633e-03
+2026-09-08 16:49:58,636 - INFO: [Epoch 46] val[enroll] loss=1.8435e-03  cos(predicted_centroid, true_centroid)=0.7396
+2026-09-08 16:50:01,488 - INFO: [Epoch 46] val[mixture] loss=5.0462e-03  cos(predicted_centroid, true_centroid)=0.6434
+2026-09-08 16:50:04,361 - INFO: [Epoch 46] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.4150 mse=4.4454e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4936 mse=1.0488e-02
+2026-09-08 16:50:29,594 - INFO: Epoch [47] done.  avg MSE=9.3325e-04  avg MixAlignLoss=4.1548e-03
+2026-09-08 16:50:30,964 - INFO: [Epoch 47] val[enroll] loss=1.8550e-03  cos(predicted_centroid, true_centroid)=0.7374
+2026-09-08 16:50:33,761 - INFO: [Epoch 47] val[mixture] loss=5.0405e-03  cos(predicted_centroid, true_centroid)=0.6441
+2026-09-08 16:50:36,729 - INFO: [Epoch 47] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.4157 mse=4.4427e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4938 mse=1.0504e-02
+2026-09-08 16:51:01,866 - INFO: Epoch [48] done.  avg MSE=9.3201e-04  avg MixAlignLoss=4.1444e-03
+2026-09-08 16:51:03,205 - INFO: [Epoch 48] val[enroll] loss=1.8491e-03  cos(predicted_centroid, true_centroid)=0.7379
+2026-09-08 16:51:06,044 - INFO: [Epoch 48] val[mixture] loss=5.0440e-03  cos(predicted_centroid, true_centroid)=0.6437
+2026-09-08 16:51:08,883 - INFO: [Epoch 48] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.4158 mse=4.4256e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4941 mse=1.0452e-02
+2026-09-08 16:51:33,995 - INFO: Epoch [49] done.  avg MSE=9.3084e-04  avg MixAlignLoss=4.1380e-03
+2026-09-08 16:51:35,438 - INFO: [Epoch 49] val[enroll] loss=1.8634e-03  cos(predicted_centroid, true_centroid)=0.7361
+2026-09-08 16:51:38,156 - INFO: [Epoch 49] val[mixture] loss=5.0272e-03  cos(predicted_centroid, true_centroid)=0.6452
+2026-09-08 16:51:41,167 - INFO: [Epoch 49] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.4183 mse=4.3739e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4939 mse=1.0434e-02
+2026-09-08 16:52:06,290 - INFO: Epoch [50] done.  avg MSE=9.2663e-04  avg MixAlignLoss=4.1403e-03
+2026-09-08 16:52:07,611 - INFO: [Epoch 50] val[enroll] loss=1.8679e-03  cos(predicted_centroid, true_centroid)=0.7358
+2026-09-08 16:52:10,443 - INFO: [Epoch 50] val[mixture] loss=5.0458e-03  cos(predicted_centroid, true_centroid)=0.6439
+2026-09-08 16:52:13,361 - INFO: [Epoch 50] val[mixture] gs: cos(hat_c_mix - hat_c_s1, oracle_s2)=0.4180 mse=4.4032e-03  |  gs2x: cos(2*hat_c_mix - hat_c_s1, oracle_s2)=0.4956 mse=1.0485e-02

@@ -1,0 +1,29 @@
+# Dataset content: folder structure only, actual files not tracked.
+# (generation code under dataset/scripts/librimix/generate/ IS tracked)
+dataset/data/**/*
+!dataset/data/**/
+!dataset/data/**/.gitkeep
+
+dataset/scripts/librimix/metadata/**/*
+!dataset/scripts/librimix/metadata/**/
+!dataset/scripts/librimix/metadata/**/.gitkeep
+
+# Exp result files are tracked, but not checkpoints or raw audio samples.
+*.ckpt
+*.wav
+*.pt
+
+# W&B local run logs.
+**/wandb/
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Editor / OS
+.DS_Store
+.claude/
+
+# Not pushed yet (per request)
+/README.md

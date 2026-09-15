@@ -1,0 +1,60 @@
+campplus:
+  ckpt_path: /home/yhj010811/.cache/modelscope/models/iic--speech_campplus_sv_zh_en_16k-common_advanced/snapshots/v1.0.0/campplus_cn_en_common.pt
+data:
+  audio_length: 3
+  batch_size: 16
+  data_root: /NHNHOME/WORKSPACE/0526050040_A/hjyoo/test/dataset/data/Libri2Mix/wav16k/min
+  dsm: true
+  enroll_len: 3
+  librispeech_root: /NHNHOME/WORKSPACE/0526050040_A/hjyoo/test/dataset/data/LibriSpeech
+  mode: mix_clean
+  noise_prob: 0.0
+  num_workers: 16
+  sample_rate: 16000
+  sir_range:
+  - -5.0
+  - 5.0
+  train_subset:
+  - train-100
+  valid_subset: dev
+distribute:
+  distributed: true
+  gpu_ids:
+  - 0
+eval:
+  gpu_id: 0
+grad_clipping:
+  clip_grad: 5.0
+master_port: 29621
+model:
+  feature_dim: 128
+  normalize_emb: true
+  num_repeat: 6
+  spk_emb_dim: 192
+  spk_fuse_type: multiply
+  sr: 16000
+  stride: 128
+  use_spk_transform: false
+  win: 512
+optim:
+  final_lr: 2.0e-05
+  lr: 0.001
+  lr_descend_factor: 0.98
+  lr_schedule: exponential
+  max_epoch: 150
+  optimizer: adam
+  patience: 0
+  stop_patience: 10
+  weight_decay: 0.0001
+training:
+  accum_grad: 1
+  eval_interval: 1
+  exp_dir: exp/baseline_norm_dsm
+  loss: sisdr
+  model_name: baseline_norm_dsm
+  num_avg: 5
+  resume: true
+wandb:
+  enabled: true
+  name: baseline_norm_dsm
+  project: BSRNN-CAM

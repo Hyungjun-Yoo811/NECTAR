@@ -1,0 +1,13 @@
+Acc: 0.956
+NSR: 0.0435
+PESQ: 2.791328964531422
+PESQ_mix: 1.1481929484009743
+SI-SDR: 14.872077091936022
+SI-SDR_mix: 0.0006371705630444922
+SI-SDRi: 14.871439920932055
+cfg: configs/baseline_norm_dsm.yml
+checkpoint: exp/baseline_norm_dsm/best.ckpt
+eSTOI: 0.864387216668868
+eSTOI_mix: 0.5374536101729244
+enroll_window: null
+mix_window: null

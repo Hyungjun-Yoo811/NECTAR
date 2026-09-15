@@ -1,0 +1,69 @@
+# Baseline training backbone (Table 1/4): target enrollment embedding only,
+# no negative clue. Trained with dynamic speaker mixing (data.dsm: true,
+# see data.data_loader.DSMLibriMixDataset): a fresh (speaker pair, SIR)
+# mixture every step. Validated on the static Libri2Mix mix_clean dev set.
+
+model:
+  spk_emb_dim: 192
+  sr: 16000
+  win: 512
+  stride: 128
+  feature_dim: 128
+  num_repeat: 6
+  spk_fuse_type: 'multiply'
+  use_spk_transform: False
+  normalize_emb: True
+
+campplus:
+  ckpt_path: "~/.cache/modelscope/models/iic--speech_campplus_sv_zh_en_16k-common_advanced/snapshots/v1.0.0/campplus_cn_en_common.pt"
+
+training:
+  model_name: 'baseline'
+  resume: True
+  eval_interval: 1
+  exp_dir: "exp/baseline"
+  loss: 'sisdr'
+  num_avg: 5
+  accum_grad: 1
+
+optim:
+  optimizer: adam
+  lr: 0.001
+  final_lr: 0.00002
+  weight_decay: 0.0001
+  lr_schedule: 'exponential'
+  lr_descend_factor: 0.98
+  patience: 0
+  stop_patience: 10
+  max_epoch: 150
+
+data:
+  dsm: true
+  sir_range: [-5.0, 5.0]
+  noise_prob: 0.0
+  data_root: "../dataset/data/Libri2Mix/wav16k/min"
+  librispeech_root: "../dataset/data/LibriSpeech"
+  audio_length: 3
+  enroll_len: 3
+  sample_rate: 16000
+  batch_size: 16
+  num_workers: 16
+  mode: 'mix_clean'
+  train_subset: ['train-100']
+  valid_subset: 'dev'
+
+distribute:
+  distributed: True
+  gpu_ids: [0]
+master_port: 29621
+
+eval:
+  gpu_id: 0
+
+grad_clipping:
+  clip_grad: 5.0
+
+wandb:
+  enabled: True
+  project: "BSRNN-CAM"
+  name: "baseline"

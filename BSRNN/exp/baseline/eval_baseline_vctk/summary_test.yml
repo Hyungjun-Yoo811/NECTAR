@@ -1,0 +1,14 @@
+Acc: 0.9200537453812563
+NSR: 0.07793080282163252
+PESQ: 2.6846537936802957
+PESQ_mix: 1.2149710561710994
+SI-SDR: 12.891216897535083
+SI-SDR_mix: -0.0066868644006227934
+SI-SDRi: 12.897903767390302
+cfg: configs/baseline_norm_dsm.yml
+checkpoint: exp/baseline_norm_dsm/best.ckpt
+dataset: VCTK-2Mix (out-of-domain)
+eSTOI: 0.7719958057453252
+eSTOI_mix: 0.507464011148702
+enrollment: full-length
+mix_window: null

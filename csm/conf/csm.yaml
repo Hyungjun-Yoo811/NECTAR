@@ -1,0 +1,75 @@
+# Default CSM training config (CAM++ backbone, paper Sec. 3.2): trains both
+# branches jointly (enroll -> per-speaker centroid, mixture -> C1+C2 sum) with
+# MSE loss, a depthwise conv module + attn-only transformer head. Enroll input
+# is LibriSpeech train-100 utterances; mixture input is real Libri2Mix
+# mix_clean wavs. Both branches read the same per-speaker centroid cache.
+
+seed: 1234
+exp_dir: "exp/csm/csm"
+
+# Pretrained, frozen CAM++ backbone (same checkpoint used by BSRNN/embedding_exp).
+campplus:
+  ckpt_path: "~/.cache/modelscope/models/iic--speech_campplus_sv_zh_en_16k-common_advanced/snapshots/v1.0.0/campplus_cn_en_common.pt"
+
+model:
+  impl: "v1"          # no_res / non-residual backbone -- required for use_conv
+  embedding_dim: 192
+  campp_frame_dim: 512
+  transformer_dim: 512
+  num_layers: 1
+  num_heads: 8
+  ff_dim: 512
+  dropout: 0.1
+  use_conv: true
+  conv_kernel_size: 3
+  use_transformer: "attn_only"
+
+data:
+  librispeech_root: "../dataset/data/LibriSpeech"
+  sample_rate: 16000
+  batch_size: 128
+  val_batch_size: 32
+  num_workers: 8
+  train_subset: ["train-100"]
+  valid_subset: "dev"
+
+  # Enrollment (single-speaker) branch: crop/pad length (seconds).
+  enroll_len: 3.0
+
+  # Mixture branch: real Libri2Mix mixtures to load ((s1, s2) parsed from filename).
+  mix_mode: "mix_clean"
+  train_mix_dirs:
+    - "../dataset/data/Libri2Mix/wav16k/min/train-100"
+    # - "../dataset/data/Libri2Mix/wav16k/min/train-360"
+  dev_mix_dirs:
+    - "../dataset/data/Libri2Mix/wav16k/min/dev"
+
+  # Crop/pad length (seconds) for batching -- a windowing knob only, not an SIR.
+  mix_len: 3.0
+
+  # Per-speaker centroids, shared by both branches: enroll target is
+  # cache[spk]; mixture target is cache[s1] + cache[s2], computed on the fly.
+  train_centroid_cache: "../dataset/data/centroid_cache/without_norm/train_speaker_centroids_100_360.pt"
+  dev_centroid_cache: "../dataset/data/centroid_cache/without_norm/dev_speaker_centroids.pt"
+
+training:
+  train_branches: ["enroll", "mixture"]
+  mix_loss_weight: 1.0
+  use_ap_loss: false
+  align_loss_type: "mse"
+  lr: 0.00004
+  lr_schedule: "exponential"
+  final_lr: 0.000008
+  weight_decay: 0.01
+  num_epoch: 50
+  log_batch_freq: 100
+  save_epoch_freq: 1
+  save_every_epoch: false
+  eval_epoch_freq: 1
+  # Physical GPU ids for DDP. Omit (or leave a single id) for single-GPU.
+  gpus: [0]
+
+wandb:
+  project: "csm"
+  name: "both_100_conv"
+  mode: "online"

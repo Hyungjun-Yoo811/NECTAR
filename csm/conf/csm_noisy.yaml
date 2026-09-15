@@ -1,0 +1,66 @@
+# Noisy-condition analog of csm.yaml (Table 4): identical CSM architecture
+# and training setup, but mix_mode: "mix_both" loads Libri2Mix's noisy
+# mixtures instead of mix_clean for the mixture branch.
+
+seed: 1234
+exp_dir: "exp/csm/csm_noisy"
+
+# Pretrained, frozen CAM++ backbone (same checkpoint used by BSRNN/embedding_exp).
+campplus:
+  ckpt_path: "~/.cache/modelscope/models/iic--speech_campplus_sv_zh_en_16k-common_advanced/snapshots/v1.0.0/campplus_cn_en_common.pt"
+
+model:
+  impl: "v1"          # no_res / non-residual backbone -- required for use_conv
+  embedding_dim: 192
+  campp_frame_dim: 512
+  transformer_dim: 512
+  num_layers: 1
+  num_heads: 8
+  ff_dim: 512
+  dropout: 0.1
+  use_conv: true
+  conv_kernel_size: 3
+  use_transformer: "attn_only"
+
+data:
+  librispeech_root: "../dataset/data/LibriSpeech"
+  sample_rate: 16000
+  batch_size: 128
+  val_batch_size: 32
+  num_workers: 8
+  train_subset: ["train-100"]
+  valid_subset: "dev"
+  enroll_len: 3.0
+  mix_mode: "mix_both"
+  train_mix_dirs:
+    - "../dataset/data/Libri2Mix/wav16k/min/train-100"
+    # - "../dataset/data/Libri2Mix/wav16k/min/train-360"
+  dev_mix_dirs:
+    - "../dataset/data/Libri2Mix/wav16k/min/dev"
+
+  mix_len: 3.0
+
+  train_centroid_cache: "../dataset/data/centroid_cache/without_norm/train_speaker_centroids_100_360.pt"
+  dev_centroid_cache: "../dataset/data/centroid_cache/without_norm/dev_speaker_centroids.pt"
+
+training:
+  train_branches: ["enroll", "mixture"]
+  mix_loss_weight: 1.0
+  use_ap_loss: false
+  align_loss_type: "mse"
+  lr: 0.00004
+  lr_schedule: "exponential"
+  final_lr: 0.000008
+  weight_decay: 0.01
+  num_epoch: 50
+  log_batch_freq: 100
+  save_epoch_freq: 1
+  save_every_epoch: false
+  eval_epoch_freq: 1
+  # Physical GPU ids for DDP. Omit (or leave a single id) for single-GPU.
+  gpus: [0]
+
+wandb:
+  project: "csm"
+  name: "both_100_conv_noisy"
+  mode: "online"

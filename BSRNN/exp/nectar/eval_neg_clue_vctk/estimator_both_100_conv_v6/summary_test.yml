@@ -1,0 +1,14 @@
+Acc: 0.9484380248572388
+NSR: 0.04769902586496473
+PESQ: 2.8025759479164236
+PESQ_mix: 1.2149710561710994
+SI-SDR: 14.667327062142679
+SI-SDR_mix: -0.0066868764710576465
+SI-SDRi: 14.674013939171498
+backbone_cfg: configs/neg_clue_v2_norm_dsm.yml
+backbone_clue_mode: v2
+case: estimator_both_100_conv_v6
+checkpoint: exp/neg_clue_v2_norm_dsm/best.ckpt
+dataset: VCTK-2Mix (out-of-domain)
+eSTOI: 0.8004149986039751
+eSTOI_mix: 0.507464011148702
