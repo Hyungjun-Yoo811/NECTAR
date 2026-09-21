@@ -77,7 +77,7 @@ def plot_beta_vs_mse(series, output_path):
     ax.set_ylabel("MSE", size=YLABEL_SIZE)
     ax.tick_params(axis="both", labelsize=TICK_LABEL_SIZE)
     if len(series) > 1:
-        ax.legend(loc="best", fontsize=LEGEND_FONT_SIZE)
+        ax.legend(loc="upper right", fontsize=LEGEND_FONT_SIZE)
     ax.grid(True, axis="y", alpha=0.3)
     fig.tight_layout()
     fig.savefig(output_path, dpi=150, bbox_inches="tight")

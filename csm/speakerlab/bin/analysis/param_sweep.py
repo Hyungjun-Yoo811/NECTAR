@@ -278,9 +278,9 @@ def main():
     parser.add_argument("--ecapa-ckpt", default=DEFAULT_ECAPA_CKPT)
     parser.add_argument("--emb-dim", type=int, default=192)
     parser.add_argument("--sample-rate", type=int, default=16000)
-    parser.add_argument("--enroll-len", type=_len_or_full, default="full",
+    parser.add_argument("--enroll-len", type=_len_or_full, default=3.0,
                          help="Crop length (s) for s1/s2 utterances; 'full' uses each utterance's own length.")
-    parser.add_argument("--mix-len", type=_len_or_full, default="full",
+    parser.add_argument("--mix-len", type=_len_or_full, default=3.0,
                          help="Crop length (s) for synthesized mixtures; 'full' crops to the shorter utterance.")
     parser.add_argument("--sir-range", type=float, nargs=2, default=[-5.0, 5.0])
     parser.add_argument("--n", type=int, default=DEFAULT_N,
