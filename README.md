@@ -63,8 +63,8 @@ oracle references in Table 1) are precomputed once:
 ```bash
 cd csm
 # Per-speaker centroids (CAM++): enroll-branch target + oracle eval reference
-python speakerlab/bin/preprocessing/precompute_centroids.py --subsets train-100 train-360 \
-    --output ../dataset/data/centroid_cache/without_norm/train_speaker_centroids_100_360.pt
+python speakerlab/bin/preprocessing/precompute_centroids.py --subsets train-100 \
+    --output ../dataset/data/centroid_cache/without_norm/train_speaker_centroids_100.pt
 python speakerlab/bin/preprocessing/precompute_centroids.py --subsets dev \
     --output ../dataset/data/centroid_cache/without_norm/dev_speaker_centroids.pt
 python speakerlab/bin/preprocessing/precompute_centroids.py --subsets test \
@@ -75,8 +75,8 @@ python speakerlab/bin/preprocessing/precompute_mixture_centroids.py --subsets te
     --output ../dataset/data/centroid_cache/without_norm/mixture_pair_centroids_test.pt
 
 # ECAPA-TDNN analogs, for the encoder comparison (Fig. 1/2)
-python speakerlab/bin/preprocessing/precompute_centroids.py --subsets train-100 train-360 --backbone ecapa \
-    --output ../dataset/data/centroid_cache/without_norm/train_speaker_centroids_100_360_ecapa.pt
+python speakerlab/bin/preprocessing/precompute_centroids.py --subsets train-100 --backbone ecapa \
+    --output ../dataset/data/centroid_cache/without_norm/train_speaker_centroids_100_ecapa.pt
 python speakerlab/bin/preprocessing/precompute_centroids.py --subsets dev --backbone ecapa \
     --output ../dataset/data/centroid_cache/without_norm/dev_speaker_centroids_ecapa.pt
 ```
