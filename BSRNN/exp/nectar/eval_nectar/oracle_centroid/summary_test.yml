@@ -1,0 +1,13 @@
+Acc: 0.9975
+NSR: 0.0021666666666666666
+PESQ: 2.981575432797273
+PESQ_mix: 1.1481929484009743
+SI-SDR: 17.443401304249964
+SI-SDR_mix: 0.0006371705630444922
+SI-SDRi: 17.442764135301115
+backbone_cfg: configs/nectar.yml
+backbone_clue_mode: v2
+case: oracle_centroid
+checkpoint: exp/nectar/best.ckpt
+eSTOI: 0.9059172643164831
+eSTOI_mix: 0.5374536101729244

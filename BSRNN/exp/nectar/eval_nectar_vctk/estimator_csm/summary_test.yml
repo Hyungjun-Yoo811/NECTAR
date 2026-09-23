@@ -1,0 +1,14 @@
+Acc: 0.9484380248572388
+NSR: 0.04769902586496473
+PESQ: 2.8023654766478394
+PESQ_mix: 1.2149710561710994
+SI-SDR: 14.667154342100039
+SI-SDR_mix: -0.0066868764710576465
+SI-SDRi: 14.673841207088302
+backbone_cfg: configs/nectar.yml
+backbone_clue_mode: v2
+case: estimator_csm
+checkpoint: exp/nectar/best.ckpt
+dataset: VCTK-2Mix (out-of-domain)
+eSTOI: 0.8004025047166401
+eSTOI_mix: 0.5074640111487019
