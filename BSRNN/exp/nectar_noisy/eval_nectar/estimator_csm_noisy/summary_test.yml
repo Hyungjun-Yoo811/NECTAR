@@ -1,0 +1,13 @@
+Acc: 0.9578333333333333
+NSR: 0.03883333333333333
+PESQ: 1.9035395122766494
+PESQ_mix: 1.0794566610852878
+SI-SDR: 10.083577649830374
+SI-SDR_mix: -1.9346805090573338
+SI-SDRi: 12.018258156826098
+backbone_cfg: configs/nectar_noisy.yml
+backbone_clue_mode: v2
+case: estimator_csm_noisy
+checkpoint: exp/nectar_noisy/best.ckpt
+eSTOI: 0.7439561140902353
+eSTOI_mix: 0.4009654042788784

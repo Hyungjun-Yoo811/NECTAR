@@ -31,3 +31,5 @@ __pycache__/
 # Removed from repo (kept locally only)
 /BSRNN/exp/nectar/eval_neg_clue/
 /BSRNN/exp/nectar/eval_neg_clue_vctk/
+/BSRNN/exp/mixture_clue/eval_mix_clue/
+/BSRNN/exp/nectar_noisy/eval_neg_clue/

@@ -1,0 +1,14 @@
+Acc: 0.9661666666666666
+NSR: 0.033166666666666664
+PESQ: 2.8029574888149895
+PESQ_mix: 1.1481929484009743
+SI-SDR: 15.339780474312603
+SI-SDR_mix: 0.0006371705630444922
+SI-SDRi: 15.339143310864767
+cfg: configs/mixture_clue.yml
+checkpoint: exp/mixture_clue/best.ckpt
+clue_mode: v5
+eSTOI: 0.8733974136455418
+eSTOI_mix: 0.5374536101729244
+enrollment: full-length
+mix_window: null
